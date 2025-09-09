@@ -1,0 +1,228 @@
+def model():
+    """Builds a simple feedforward neural network model.
+
+    Returns:
+        model: A Keras Sequential model instance.
+    """
+    model=Sequential(
+        [Dense(32,activation='relu',input_shape=(3,)),
+         Dense(16,activation='relu'),
+         Dense(4,activation='linear')]
+    )
+    model.compile(optimizer='adam',loss='mse')
+    return model
+ai_model=model()
+ai_model.summary()
+    
+    
+    
+class DQNAgent:
+    """
+    A Deep Q-Network (DQN) agent for reinforcement learning.
+    Attributes:
+        model: The neural network model used for approximating Q-values.
+        memory: A deque to store past experiences for experience replay.
+        gamma: Discount factor for future rewards.
+        epsilon: Exploration rate for the epsilon-greedy policy.
+        epsilon_min: Minimum exploration rate.
+        epsilon_decay: Decay rate for exploration after each training episode.
+        batch_size: Size of the minibatch for training.
+    Methods:
+        remember: Store an experience in memory.
+        choose_action: Select an action based on the current state using an epsilon-greedy policy.
+        train_from_memory: Train the model using a minibatch of experiences from memory.
+    """
+    def DQNAgent(self,model):
+        self.model=model
+        self.memory=deque(maxlen=2000)
+        self.gamma=0.95  #discount factor rewards for longterm(closer to 1) or shortterm(closer to 0)
+        self.epsilon=1.0  #exploration rate (initially high to explore)
+        self.epsilon_min=0.01  #minimum exploration rate
+        self.epsilon_decay=0.995  #decay rate for exploration(after each trainging episode the epsilon decreases rate)
+        self.batch_size=32  #size of the minibatch for training(no of agents can be trained at once)
+
+    #remember the experience
+    def remember(self,state,action,reward,next_state,done):
+        self.memory.append((state,action,reward,next_state,done))
+    
+    #choose action based on epsilon-greedy policy
+    def choose_action(self,state):
+        if np.random.rand()<=self.epsilon:
+            return random.randrange(4)
+        q_values=self.model.predict(state,verbose=0)
+        return np.argmax(q_values[0])
+    
+    #train the model from memory
+    def train_from_memory(self):
+        if len(self.memory) < self.batch_size:
+            return # Don't train if memory is too small to form a minibatch
+
+        minibatch = random.sample(self.memory, self.batch_size) # Randomly sample a minibatch from memory
+        for state, action, reward, next_state, done in minibatch:
+            target = reward
+            if not done:
+                # The core of Q-Learning: New Q = Current Reward + Discounted Future Reward
+                q_values_next = self.model.predict(next_state, verbose=0)[0]
+                target = reward + self.gamma * np.amax(q_values_next) # Update target only if not done
+
+            target_f = self.model.predict(state, verbose=0) # Current Q-values
+            target_f[0][action] = target # Update the Q-value for the action taken 
+            self.model.fit(state, target_f, epochs=1, verbose=0) # Train the model on the updated Q-values
+        
+        if self.epsilon > self.epsilon_min: 
+            self.epsilon *= self.epsilon_decay # Decay epsilon to reduce exploration over time
+
+
+
+def model_game_step(action,car,track_image,current_checkpoint):
+    """Simulates a game step for the car in the racing environment.
+
+    Args:
+        action (int): Action to be taken by the car (0: left, 1: straight, 2: right, 3: brake).
+        car (Car): The car object representing the player's car.
+        track_image (Surface): The image of the track.
+        current_checkpoint (int): The index of the current checkpoint.
+
+    Returns:
+        tuple: A tuple containing the new state, done flag, reward, and current checkpoint.
+    """
+    CHECKPOINTS = [pygame.Rect(x, y, w, h) for x, y, w, h in checkpoint_data]
+    done=False
+    reward=car.speed*0.1  #reward for moving fast
+    car.speed+=ACCELERATION
+    speed_factor=car.speed/MAX_SPEED
+    dynamic_turn_angle=MAX_TURN_ANGLE-(speed_factor)*(MAX_TURN_ANGLE-MIN_TURN_ANGLE)
+    if action==0:  #left
+        car.angle+=dynamic_turn_angle
+    elif action==2:  #right
+        car.angle-=dynamic_turn_angle
+    elif action==3:  #brake
+        car.speed-=BRAKE_FORCE
+
+    car.speed=max(0,car.speed-FRICTION)
+    car.speed=min(car.speed,MAX_SPEED)
+    car.move()
+    
+    if current_checkpoint<len(CHECKPOINTS):
+        if car.rect.colliderect(CHECKPOINTS[current_checkpoint]):
+            current_checkpoint+=1
+            reward+=20
+    if current_checkpoint==len(CHECKPOINTS) and car.rect.colliderect9(finish_line_rect):
+        reward+=200
+        current_checkpoint=0
+    
+    try:
+        pixel_color=track_image.get_at((int(car.x),int(car.y)))[:3]
+        if pixel_color==BG_COLOR:
+            done=True
+    except IndexError:
+        done=True
+        
+    if done:
+        reward= -100
+        return [],done,reward,current_checkpoint
+    new_state,_=ray_casting(car,track_image)
+    return new_state,done,reward,current_checkpoint
+    
+    
+    
+    
+    def model_game_step(action,car,track_image):
+    # Simulates a single step in the game using the provided action.
+
+    # Args:
+    #     action (int): The action to be taken (0: left, 1: accelerate, 2: right, 3: brake).
+    #     car (Car): The car object.
+    #     track_image (Surface): The surface of the track.
+
+    # Returns:
+    #     tuple: A tuple containing the new state, reward, and done flag.
+    
+    reward=0.1
+    done=False
+    
+    speed_factor = car.speed / MAX_SPEED
+    turn_range = MAX_TURN_ANGLE - MIN_TURN_ANGLE
+    dynamic_turn_angle = MAX_TURN_ANGLE - (speed_factor * turn_range)
+    if action==0:
+        car.angle += dynamic_turn_angle
+    elif action==2:
+        car.angle -= dynamic_turn_angle
+    elif action==1:
+        if car.speed < MAX_SPEED:
+                car.speed += ACCELERATION
+    elif action==3:
+        if car.speed > 0:
+            car.speed -= BRAKE_FORCE
+    if car.speed > 0:
+        car.speed -= FRICTION
+    if car.speed < 0:
+        car.speed += FRICTION
+    if abs(car.speed) < FRICTION:
+        car.speed = 0
+        
+    car.move()
+    car.draw(track_image)
+    
+    try:
+        CAR_ROAD_COLOR = track_image.get_at((DEFAULT_START_X, DEFAULT_START_Y))[:3]
+        pixel_color = track_image.get_at((int(car.x), int(car.y)))[0:3]
+        if pixel_color == CAR_ROAD_COLOR:
+            done = True
+    except IndexError:
+        done = True
+    if done:
+        reward= -100
+        return [], reward, done
+
+    new_state,_=ray_casting(car,track_image)
+    return new_state,reward,done
+
+
+
+
+def run_ai_simulation():
+    """Runs the car simulation controlled by an AI model.
+        The AI model predicts actions based on the car's sensor data.
+        0: turn left
+        1: accelerate
+        2: turn right
+        3: brake
+    """
+    pygame.init()
+    screen=pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    clock=pygame.time.Clock()
+    pygame.display.set_caption("AI Car Simulation")
+    track_surface=pygame.image.load(TRACK_IMAGE_PATH).convert()
+    car=Car(CAR_IMAGE_PATH,DEFAULT_START_X,DEFAULT_START_Y,DEFAULT_START_ANGLE,DEFAULT_START_SPEED)
+    font=pygame.font.SysFont(None,22)
+    
+    running=True
+    while running:
+        for event in pygame.event.get():
+            if event.type==pygame.QUIT:
+                running=False
+        current_state,ray_endpoints=ray_casting(car,track_surface)
+        reshaped_state = np.reshape(current_state, [1, 3])
+        q_values = ai_model.predict(reshaped_state, verbose=0)
+        action = np.argmax(q_values[0])
+        _ ,_ ,done=model_game_step(action,car,track_surface)
+        if done:
+            text_surface = font.render("Car Crashed! Resetting...", True, (255, 255, 255))
+            screen.blit(text_surface, (50, 50))
+            pygame.display.update()
+            pygame.time.wait(1000)
+            car=Car(CAR_IMAGE_PATH,DEFAULT_START_X,DEFAULT_START_Y,DEFAULT_START_ANGLE,DEFAULT_START_SPEED)
+        
+        screen.blit(track_surface,(0,0))
+        car.draw(screen)
+        
+        text_surface = font.render(f"Distances: {current_state}", True, (255, 255, 255))
+        screen.blit(text_surface, (50, 80))
+        for points in ray_endpoints:
+            pygame.draw.line(screen,(0,255,0),(car.x,car.y),points,1)
+            
+        pygame.display.update()
+        clock.tick(60)
+    pygame.quit()
+        
