@@ -10,20 +10,12 @@ import pygame
 import matplotlib.pyplot as plt
 from collections import deque
 from matplotlib.ticker import MaxNLocator
-
-# ==============================================================================
-# FINAL CORRECTED CORE LOGIC
-# ==============================================================================
-
-# --- CORRECTED GLOBAL CONSTANTS ---
 SCREEN_WIDTH, SCREEN_HEIGHT = 1280, 720
 BG_COLOR = (120, 120, 120)  # The GREY color of the WALL/BACKGROUND
 DRAW_COLOR = (50, 50, 50)   # The DARK GREY color of the ROAD
 CAR_WIDTH, CAR_HEIGHT = 20, 40
-# --- NEW, SAFE STARTING POSITION ---
-DEFAULT_START_X, DEFAULT_START_Y = 1050, 550
+DEFAULT_START_X, DEFAULT_START_Y = 1050, 550 # A known SAFE starting position
 DEFAULT_START_ANGLE = 180 # Pointing left towards the first turn
-# -----------------------------------
 ACCELERATION = 0.05
 BRAKE_FORCE = 0.1
 MAX_SPEED = 5.00
@@ -64,7 +56,8 @@ def ray_casting(car, track_surface):
             dist += 1
             if not (0 <= ray_x < SCREEN_WIDTH and 0 <= ray_y < SCREEN_HEIGHT): break
             try:
-                if track_surface.get_at((int(ray_x), int(ray_y)))[:3] == BG_COLOR: break
+                # BUG FIX: Stop at the WALL (BG_COLOR)
+                if track_surface.get_at((int(ray_x), int(ray_y)))[:3] == DRAW_COLOR: break
             except (IndexError, pygame.error): break
         distances.append(dist)
     return distances, []
@@ -85,16 +78,16 @@ def model_game_step(action, car, track_surface, current_checkpoint):
         if car.rect.colliderect(checkpoint_rects[current_checkpoint]):
             current_checkpoint += 1; reward += 1000
     try:
-        if track_surface.get_at((int(car.x), int(car.y)))[:3] == BG_COLOR: done = True
+        # BUG FIX: Crash on the WALL (BG_COLOR)
+        if track_surface.get_at((int(car.x), int(car.y)))[:3] == DRAW_COLOR: done = True
     except (IndexError, pygame.error): done = True
     if done: reward = -100
     new_state, _ = ray_casting(car, track_surface)
     return new_state, done, reward, current_checkpoint
 
 # ==============================================================================
-# ACTOR-CRITIC LOGIC
+# CELL 3: ACTOR-CRITIC LOGIC & PLOTTING
 # ==============================================================================
-
 def model_fn():
     net = Sequential([
         Dense(64, activation='relu', input_shape=(4,)),
@@ -104,6 +97,10 @@ def model_fn():
     return net
 
 def run_actor(actor_id, experience_queue, weights_path, stop_event):
+    # --- FIX: Isolate this process to the CPU to prevent GPU deadlocks ---
+    import tensorflow as tf
+    tf.config.set_visible_devices([], 'GPU')
+
     print(f"[Actor {actor_id}] Started.")
     os.environ["SDL_VIDEODRIVER"] = "dummy"
     pygame.init()
@@ -116,32 +113,38 @@ def run_actor(actor_id, experience_queue, weights_path, stop_event):
 
     while not stop_event.is_set():
         if episode_count % 10 == 0:
-            try: actor_model.load_weights(weights_path)
-            except Exception: pass
-        
+            try:
+                actor_model.load_weights(weights_path)
+            except Exception:
+                pass
+
         car = Car(CAR_IMAGE_PATH, DEFAULT_START_X, DEFAULT_START_Y, DEFAULT_START_ANGLE)
         ckpt, total_r, max_s = 0, 0, 0
         dist, _ = ray_casting(car, track_surface)
         state = np.array(dist + [car.speed / MAX_SPEED])
 
         for step in range(5000):
+            print(f"[Actor {actor_id}] Episode {episode_count}, Step {step}: Predicting action...")
+
             action = random.randrange(3) if np.random.rand() <= epsilon else np.argmax(actor_model.predict(np.reshape(state, [1, 4]), verbose=0)[0])
             dist_next, done, reward, new_ckpt = model_game_step(action, car, track_surface, ckpt)
             next_state = np.array(dist_next + [car.speed / MAX_SPEED])
-            
+
             experience_queue.put(('experience', (state, action, reward, next_state, done)))
-            
+
             state, ckpt = next_state, new_ckpt
             total_r += reward
             max_s = max(max_s, car.speed)
-            
-            if done: break
-        
+
+            if done:
+                break
+
         experience_queue.put(('summary', (total_r, ckpt, max_s)))
-        
-        if epsilon > epsilon_min: epsilon *= epsilon_decay
+
+        if epsilon > epsilon_min:
+            epsilon *= epsilon_decay
         episode_count += 1
-    
+
     print(f"[Actor {actor_id}] Stopping.")
 
 def run_learner(experience_queue, weights_path, stop_event, total_episodes):
@@ -199,8 +202,8 @@ def run_learner(experience_queue, weights_path, stop_event, total_episodes):
 
     print("\n[Learner] Training complete. Stopping actors...")
     stop_event.set()
-    learner_model.save_weights("final_a3c.weights.h5")
-    print("Final weights saved to 'final_a3c.weights.h5'")
+    learner_model.save_weights("final_a3c_weights.h5")
+    print("Final weights saved to 'final_a3c_weights.h5'")
     return history
 
 def plot_results(history):
@@ -229,18 +232,18 @@ def plot_results(history):
 
     plt.tight_layout()
     plt.show()
-
 # ==============================================================================
-# MAIN EXECUTION BLOCK
+# CELL 4: MAIN EXECUTION BLOCK
 # ==============================================================================
 if __name__ == "__main__":
     # --- Configuration ---
     # Use 1 less than your number of logical cores (e.g., 8 cores -> 7 actors)
     NUM_ACTORS = mp.cpu_count() - 1 
-    TOTAL_EPISODES_TO_TRAIN = 2000
-    WEIGHTS_FILE = "a3c_shared.weights.h5"
+    TOTAL_EPISODES_TO_TRAIN = 200
+    WEIGHTS_FILE = "a3c_shared_weights.h5"
 
     # --- Setup and Run ---
+    # The 'if __name__ == "__main__"' is crucial for multiprocessing to work correctly in scripts/notebooks
     with mp.Manager() as manager:
         experience_queue = manager.Queue()
         stop_event = manager.Event()
@@ -259,4 +262,36 @@ if __name__ == "__main__":
         plot_results(training_history)
 
     print("All processes finished. Exiting.")
+# --- DIAGNOSTIC CELL ---
+def simple_actor_test():
+    print("--- Running Diagnostic Test ---")
+    # Setup a headless pygame environment
+    os.environ["SDL_VIDEODRIVER"] = "dummy"
+    pygame.init()
+    
+    # Load the track
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    track_surface = pygame.image.load(TRACK_IMAGE_PATH).convert()
+    
+    
+    # Spawn a car at the start position
+    car = Car(CAR_IMAGE_PATH, DEFAULT_START_X, DEFAULT_START_Y)
+    
+    # Get the color of the pixel directly under the car
+    pixel_color = track_surface.get_at((int(car.x), int(car.y)))[:3]
+    
+    print(f"Car spawned at: ({int(car.x)}, {int(car.y)})")
+    print(f"Color under the car: {pixel_color}")
+    
+    # Check this color against your constants
+    print(f"Your Road Color (DRAW_COLOR) is: {DRAW_COLOR}")
+    print(f"Your Wall Color (BG_COLOR) is: {BG_COLOR}")
+    
+    if pixel_color == BG_COLOR:
+        print("\nDIAGNOSIS CONFIRMED: The car spawns on the road color.")
+        print("Your crash logic incorrectly treats this as a crash, causing the actors to fail.")
+    else:
+        print("\nDIAGNOSIS FAILED: Something else is wrong.")
 
+# Run the test
+simple_actor_test()
