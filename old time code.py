@@ -752,7 +752,7 @@ agent = D3QNAgent(state_size, action_size)
 # Ensure the file name matches exactly what you have on disk
 try:
     print("Loading pretrained weights...")
-    agent.model.load_weights("best_d3qn_16checkpoints.weights.h5")
+    agent.model.load_weights("Weights/root_run_d3qn/best_d3qn_16checkpoints.weights.h5")
     agent.target_model.set_weights(agent.model.get_weights())
     print("Weights loaded successfully!")
 except:
