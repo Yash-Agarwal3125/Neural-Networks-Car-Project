@@ -1,0 +1,9 @@
+encoding,condition,mean_checkpoints,crash_rate
+angle_tagged,angle_shift_15deg,0.0,1.0
+angle_tagged,angle_shift_30deg,0.0,1.0
+angle_tagged,baseline,3.3333333333333335,0.3333333333333333
+angle_tagged,beam_permutation,3.3333333333333335,0.3333333333333333
+ordinal,angle_shift_15deg,1.3333333333333333,0.6666666666666666
+ordinal,angle_shift_30deg,0.0,1.0
+ordinal,baseline,4.0,0.0
+ordinal,beam_permutation,0.0,1.0

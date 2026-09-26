@@ -1,0 +1,187 @@
+2026-09-03 18:08:50.686803: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-03 18:09:02.739500: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-03 18:09:12.629065: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\ablation\dqn_seed0] ep 20/120 reward=17.8 cp=0 eps=0.373 elapsed=94s
+[experiments/full_runs\ablation\dqn_seed0] ep 40/120 reward=16.7 cp=0 eps=0.207 elapsed=153s
+[experiments/full_runs\ablation\dqn_seed0] ep 60/120 reward=19.4 cp=0 eps=0.121 elapsed=212s
+[experiments/full_runs\ablation\dqn_seed0] ep 80/120 reward=17.9 cp=0 eps=0.100 elapsed=261s
+[experiments/full_runs\ablation\dqn_seed0] ep 100/120 reward=19.6 cp=0 eps=0.100 elapsed=312s
+[experiments/full_runs\ablation\dqn_seed0] ep 120/120 reward=30.8 cp=0 eps=0.100 elapsed=368s
+DONE experiments/full_runs\ablation\dqn_seed0 in 368s
+[experiments/full_runs\ablation\dqn_seed1] ep 20/120 reward=18.2 cp=0 eps=0.262 elapsed=114s
+[experiments/full_runs\ablation\dqn_seed1] ep 40/120 reward=20.9 cp=0 eps=0.151 elapsed=165s
+[experiments/full_runs\ablation\dqn_seed1] ep 60/120 reward=16.7 cp=0 eps=0.100 elapsed=216s
+[experiments/full_runs\ablation\dqn_seed1] ep 80/120 reward=19.4 cp=0 eps=0.100 elapsed=265s
+[experiments/full_runs\ablation\dqn_seed1] ep 100/120 reward=18.8 cp=0 eps=0.100 elapsed=320s
+[experiments/full_runs\ablation\dqn_seed1] ep 120/120 reward=32.5 cp=0 eps=0.100 elapsed=383s
+DONE experiments/full_runs\ablation\dqn_seed1 in 383s
+[experiments/full_runs\ablation\dqn_seed2] ep 20/120 reward=30.9 cp=0 eps=0.418 elapsed=64s
+[experiments/full_runs\ablation\dqn_seed2] ep 40/120 reward=24.1 cp=0 eps=0.210 elapsed=117s
+[experiments/full_runs\ablation\dqn_seed2] ep 60/120 reward=-10.1 cp=0 eps=0.100 elapsed=189s
+[experiments/full_runs\ablation\dqn_seed2] ep 80/120 reward=22.6 cp=0 eps=0.100 elapsed=272s
+[experiments/full_runs\ablation\dqn_seed2] ep 100/120 reward=-7.6 cp=1 eps=0.100 elapsed=497s
+[experiments/full_runs\ablation\dqn_seed2] ep 120/120 reward=127.9 cp=1 eps=0.100 elapsed=708s
+DONE experiments/full_runs\ablation\dqn_seed2 in 708s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 20/120 reward=25.1 cp=0 eps=0.398 elapsed=92s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 40/120 reward=19.5 cp=0 eps=0.221 elapsed=155s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 60/120 reward=17.4 cp=0 eps=0.128 elapsed=212s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 80/120 reward=35.1 cp=0 eps=0.100 elapsed=296s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 100/120 reward=19.5 cp=0 eps=0.100 elapsed=390s
+[experiments/full_runs\ablation\dqn_per_seed0] ep 120/120 reward=31.0 cp=0 eps=0.100 elapsed=465s
+DONE experiments/full_runs\ablation\dqn_per_seed0 in 465s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 20/120 reward=18.4 cp=0 eps=0.358 elapsed=87s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 40/120 reward=33.8 cp=0 eps=0.177 elapsed=145s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 60/120 reward=21.7 cp=0 eps=0.100 elapsed=206s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 80/120 reward=26.6 cp=0 eps=0.100 elapsed=263s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 100/120 reward=29.8 cp=0 eps=0.100 elapsed=332s
+[experiments/full_runs\ablation\dqn_per_seed1] ep 120/120 reward=129.8 cp=1 eps=0.100 elapsed=442s
+DONE experiments/full_runs\ablation\dqn_per_seed1 in 442s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 20/120 reward=40.4 cp=0 eps=0.394 elapsed=113s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 40/120 reward=27.8 cp=0 eps=0.187 elapsed=203s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 60/120 reward=17.2 cp=0 eps=0.101 elapsed=276s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 80/120 reward=16.4 cp=0 eps=0.100 elapsed=379s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 100/120 reward=18.6 cp=0 eps=0.100 elapsed=428s
+[experiments/full_runs\ablation\dqn_per_seed2] ep 120/120 reward=32.8 cp=0 eps=0.100 elapsed=489s
+DONE experiments/full_runs\ablation\dqn_per_seed2 in 489s
+[experiments/full_runs\ablation\ddqn_seed0] ep 20/120 reward=18.2 cp=0 eps=0.371 elapsed=61s
+[experiments/full_runs\ablation\ddqn_seed0] ep 40/120 reward=20.3 cp=0 eps=0.198 elapsed=101s
+[experiments/full_runs\ablation\ddqn_seed0] ep 60/120 reward=20.1 cp=0 eps=0.116 elapsed=148s
+[experiments/full_runs\ablation\ddqn_seed0] ep 80/120 reward=32.4 cp=0 eps=0.100 elapsed=204s
+[experiments/full_runs\ablation\ddqn_seed0] ep 100/120 reward=21.6 cp=0 eps=0.100 elapsed=266s
+[experiments/full_runs\ablation\ddqn_seed0] ep 120/120 reward=30.6 cp=0 eps=0.100 elapsed=348s
+DONE experiments/full_runs\ablation\ddqn_seed0 in 348s
+[experiments/full_runs\ablation\ddqn_seed1] ep 20/120 reward=21.3 cp=0 eps=0.324 elapsed=105s
+[experiments/full_runs\ablation\ddqn_seed1] ep 40/120 reward=19.6 cp=0 eps=0.180 elapsed=161s
+[experiments/full_runs\ablation\ddqn_seed1] ep 60/120 reward=30.4 cp=0 eps=0.100 elapsed=219s
+[experiments/full_runs\ablation\ddqn_seed1] ep 80/120 reward=24.3 cp=0 eps=0.100 elapsed=290s
+[experiments/full_runs\ablation\ddqn_seed1] ep 100/120 reward=31.4 cp=0 eps=0.100 elapsed=368s
+[experiments/full_runs\ablation\ddqn_seed1] ep 120/120 reward=31.3 cp=0 eps=0.100 elapsed=463s
+DONE experiments/full_runs\ablation\ddqn_seed1 in 463s
+[experiments/full_runs\ablation\ddqn_seed2] ep 20/120 reward=20.0 cp=0 eps=0.404 elapsed=96s
+[experiments/full_runs\ablation\ddqn_seed2] ep 40/120 reward=18.5 cp=0 eps=0.212 elapsed=166s
+[experiments/full_runs\ablation\ddqn_seed2] ep 60/120 reward=17.7 cp=0 eps=0.125 elapsed=224s
+[experiments/full_runs\ablation\ddqn_seed2] ep 80/120 reward=18.1 cp=0 eps=0.100 elapsed=277s
+[experiments/full_runs\ablation\ddqn_seed2] ep 100/120 reward=26.0 cp=0 eps=0.100 elapsed=344s
+[experiments/full_runs\ablation\ddqn_seed2] ep 120/120 reward=27.7 cp=0 eps=0.100 elapsed=426s
+DONE experiments/full_runs\ablation\ddqn_seed2 in 427s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 20/120 reward=25.1 cp=0 eps=0.398 elapsed=114s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 40/120 reward=24.0 cp=0 eps=0.219 elapsed=191s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 60/120 reward=17.3 cp=0 eps=0.129 elapsed=273s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 80/120 reward=22.6 cp=0 eps=0.100 elapsed=366s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 100/120 reward=35.2 cp=0 eps=0.100 elapsed=479s
+[experiments/full_runs\ablation\ddqn_per_seed0] ep 120/120 reward=36.0 cp=0 eps=0.100 elapsed=596s
+DONE experiments/full_runs\ablation\ddqn_per_seed0 in 596s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 20/120 reward=41.0 cp=0 eps=0.238 elapsed=181s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 40/120 reward=20.9 cp=0 eps=0.115 elapsed=280s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 60/120 reward=19.5 cp=0 eps=0.100 elapsed=363s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 80/120 reward=19.4 cp=0 eps=0.100 elapsed=440s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 100/120 reward=19.2 cp=0 eps=0.100 elapsed=519s
+[experiments/full_runs\ablation\ddqn_per_seed1] ep 120/120 reward=43.7 cp=0 eps=0.100 elapsed=610s
+DONE experiments/full_runs\ablation\ddqn_per_seed1 in 610s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 20/120 reward=29.1 cp=0 eps=0.404 elapsed=133s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 40/120 reward=20.9 cp=0 eps=0.226 elapsed=216s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 60/120 reward=20.3 cp=0 eps=0.126 elapsed=304s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 80/120 reward=25.5 cp=0 eps=0.100 elapsed=390s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 100/120 reward=27.2 cp=0 eps=0.100 elapsed=491s
+[experiments/full_runs\ablation\ddqn_per_seed2] ep 120/120 reward=83.2 cp=0 eps=0.100 elapsed=665s
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+DONE experiments/full_runs\ablation\ddqn_per_seed2 in 665s
+[experiments/full_runs\ablation\dueling_seed0] ep 20/120 reward=17.8 cp=0 eps=0.373 elapsed=106s
+[experiments/full_runs\ablation\dueling_seed0] ep 40/120 reward=16.7 cp=0 eps=0.207 elapsed=177s
+[experiments/full_runs\ablation\dueling_seed0] ep 60/120 reward=19.2 cp=0 eps=0.121 elapsed=245s
+[experiments/full_runs\ablation\dueling_seed0] ep 80/120 reward=32.2 cp=0 eps=0.100 elapsed=329s
+[experiments/full_runs\ablation\dueling_seed0] ep 100/120 reward=36.1 cp=0 eps=0.100 elapsed=432s
+[experiments/full_runs\ablation\dueling_seed0] ep 120/120 reward=161.8 cp=1 eps=0.100 elapsed=549s
+DONE experiments/full_runs\ablation\dueling_seed0 in 550s
+[experiments/full_runs\ablation\dueling_seed1] ep 20/120 reward=17.7 cp=0 eps=0.414 elapsed=92s
+[experiments/full_runs\ablation\dueling_seed1] ep 40/120 reward=17.3 cp=0 eps=0.221 elapsed=159s
+[experiments/full_runs\ablation\dueling_seed1] ep 60/120 reward=16.6 cp=0 eps=0.129 elapsed=222s
+[experiments/full_runs\ablation\dueling_seed1] ep 80/120 reward=17.0 cp=0 eps=0.100 elapsed=285s
+[experiments/full_runs\ablation\dueling_seed1] ep 100/120 reward=27.8 cp=0 eps=0.100 elapsed=368s
+[experiments/full_runs\ablation\dueling_seed1] ep 120/120 reward=33.5 cp=0 eps=0.100 elapsed=464s
+DONE experiments/full_runs\ablation\dueling_seed1 in 464s
+[experiments/full_runs\ablation\dueling_seed2] ep 20/120 reward=30.5 cp=0 eps=0.335 elapsed=112s
+[experiments/full_runs\ablation\dueling_seed2] ep 40/120 reward=32.3 cp=0 eps=0.156 elapsed=194s
+[experiments/full_runs\ablation\dueling_seed2] ep 60/120 reward=25.7 cp=0 eps=0.100 elapsed=268s
+[experiments/full_runs\ablation\dueling_seed2] ep 80/120 reward=31.5 cp=0 eps=0.100 elapsed=350s
+[experiments/full_runs\ablation\dueling_seed2] ep 100/120 reward=37.5 cp=0 eps=0.100 elapsed=458s
+[experiments/full_runs\ablation\dueling_seed2] ep 120/120 reward=37.1 cp=0 eps=0.100 elapsed=47627s
+DONE experiments/full_runs\ablation\dueling_seed2 in 47627s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 20/120 reward=25.1 cp=0 eps=0.398 elapsed=91s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 40/120 reward=18.9 cp=0 eps=0.221 elapsed=137s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 60/120 reward=20.7 cp=0 eps=0.129 elapsed=180s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 80/120 reward=32.8 cp=0 eps=0.100 elapsed=261s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 100/120 reward=18.9 cp=0 eps=0.100 elapsed=342s
+[experiments/full_runs\ablation\dueling_per_seed0] ep 120/120 reward=14.7 cp=0 eps=0.100 elapsed=426s
+DONE experiments/full_runs\ablation\dueling_per_seed0 in 428s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 20/120 reward=21.9 cp=0 eps=0.378 elapsed=68s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 40/120 reward=20.8 cp=0 eps=0.203 elapsed=111s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 60/120 reward=22.2 cp=0 eps=0.115 elapsed=153s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 80/120 reward=26.0 cp=0 eps=0.100 elapsed=219s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 100/120 reward=104.7 cp=0 eps=0.100 elapsed=331s
+[experiments/full_runs\ablation\dueling_per_seed1] ep 120/120 reward=114.3 cp=0 eps=0.100 elapsed=703s
+DONE experiments/full_runs\ablation\dueling_per_seed1 in 703s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 20/120 reward=25.8 cp=0 eps=0.398 elapsed=92s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 40/120 reward=17.8 cp=0 eps=0.217 elapsed=152s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 60/120 reward=37.8 cp=0 eps=0.107 elapsed=221s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 80/120 reward=31.1 cp=0 eps=0.100 elapsed=308s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 100/120 reward=31.9 cp=0 eps=0.100 elapsed=502s
+[experiments/full_runs\ablation\dueling_per_seed2] ep 120/120 reward=647.4 cp=6 eps=0.100 elapsed=1171s
+DONE experiments/full_runs\ablation\dueling_per_seed2 in 1171s
+[experiments/full_runs\ablation\d3qn_seed0] ep 20/120 reward=17.8 cp=0 eps=0.373 elapsed=41s
+[experiments/full_runs\ablation\d3qn_seed0] ep 40/120 reward=16.7 cp=0 eps=0.207 elapsed=67s
+[experiments/full_runs\ablation\d3qn_seed0] ep 60/120 reward=18.0 cp=0 eps=0.121 elapsed=95s
+[experiments/full_runs\ablation\d3qn_seed0] ep 80/120 reward=20.2 cp=0 eps=0.100 elapsed=126s
+[experiments/full_runs\ablation\d3qn_seed0] ep 100/120 reward=26.8 cp=0 eps=0.100 elapsed=173s
+[experiments/full_runs\ablation\d3qn_seed0] ep 120/120 reward=33.6 cp=0 eps=0.100 elapsed=216s
+DONE experiments/full_runs\ablation\d3qn_seed0 in 216s
+[experiments/full_runs\ablation\d3qn_seed1] ep 20/120 reward=17.7 cp=0 eps=0.414 elapsed=42s
+[experiments/full_runs\ablation\d3qn_seed1] ep 40/120 reward=23.6 cp=0 eps=0.219 elapsed=70s
+[experiments/full_runs\ablation\d3qn_seed1] ep 60/120 reward=19.3 cp=0 eps=0.127 elapsed=95s
+[experiments/full_runs\ablation\d3qn_seed1] ep 80/120 reward=26.9 cp=0 eps=0.100 elapsed=125s
+[experiments/full_runs\ablation\d3qn_seed1] ep 100/120 reward=34.6 cp=0 eps=0.100 elapsed=165s
+[experiments/full_runs\ablation\d3qn_seed1] ep 120/120 reward=31.0 cp=0 eps=0.100 elapsed=208s
+DONE experiments/full_runs\ablation\d3qn_seed1 in 208s
+[experiments/full_runs\ablation\d3qn_seed2] ep 20/120 reward=31.9 cp=0 eps=0.408 elapsed=40s
+[experiments/full_runs\ablation\d3qn_seed2] ep 40/120 reward=30.2 cp=0 eps=0.225 elapsed=66s
+[experiments/full_runs\ablation\d3qn_seed2] ep 60/120 reward=21.2 cp=0 eps=0.124 elapsed=94s
+[experiments/full_runs\ablation\d3qn_seed2] ep 80/120 reward=28.4 cp=0 eps=0.100 elapsed=130s
+[experiments/full_runs\ablation\d3qn_seed2] ep 100/120 reward=53.7 cp=0 eps=0.100 elapsed=205s
+[experiments/full_runs\ablation\d3qn_seed2] ep 120/120 reward=2.2 cp=0 eps=0.100 elapsed=290s
+DONE experiments/full_runs\ablation\d3qn_seed2 in 290s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 20/120 reward=28.9 cp=0 eps=0.398 elapsed=61s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 40/120 reward=24.1 cp=0 eps=0.210 elapsed=111s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 60/120 reward=19.1 cp=0 eps=0.120 elapsed=159s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 80/120 reward=30.2 cp=0 eps=0.100 elapsed=267s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 100/120 reward=526.3 cp=3 eps=0.100 elapsed=534s
+[experiments/full_runs\ablation\d3qn_per_seed0] ep 120/120 reward=558.2 cp=3 eps=0.100 elapsed=1173s
+DONE experiments/full_runs\ablation\d3qn_per_seed0 in 1173s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 20/120 reward=1.2 cp=0 eps=0.119 elapsed=153s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 40/120 reward=450.6 cp=2 eps=0.100 elapsed=620s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 60/120 reward=464.7 cp=2 eps=0.100 elapsed=1350s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 80/120 reward=480.2 cp=2 eps=0.100 elapsed=2193s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 100/120 reward=455.7 cp=2 eps=0.100 elapsed=2755s
+[experiments/full_runs\ablation\d3qn_per_seed1] ep 120/120 reward=515.0 cp=3 eps=0.100 elapsed=3661s
+DONE experiments/full_runs\ablation\d3qn_per_seed1 in 3661s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 20/120 reward=29.1 cp=0 eps=0.314 elapsed=112s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 40/120 reward=-7.8 cp=0 eps=0.117 elapsed=239s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 60/120 reward=15.5 cp=0 eps=0.100 elapsed=377s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 80/120 reward=42.1 cp=0 eps=0.100 elapsed=547s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 100/120 reward=195.8 cp=1 eps=0.100 elapsed=953s
+[experiments/full_runs\ablation\d3qn_per_seed2] ep 120/120 reward=667.5 cp=6 eps=0.100 elapsed=2161s
+DONE experiments/full_runs\ablation\d3qn_per_seed2 in 2161s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 20/120 reward=28.9 cp=0 eps=0.398 elapsed=137s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 40/120 reward=24.1 cp=0 eps=0.210 elapsed=231s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 60/120 reward=19.1 cp=0 eps=0.120 elapsed=317s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 80/120 reward=30.2 cp=0 eps=0.100 elapsed=551s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 100/120 reward=526.3 cp=3 eps=0.100 elapsed=1116s
+[experiments/full_runs\sensing_train\nominal_seed0] ep 120/120 reward=558.2 cp=3 eps=0.100 elapsed=2256s
+DONE experiments/full_runs\sensing_train\nominal_seed0 in 2257s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 20/120 reward=1.2 cp=0 eps=0.119 elapsed=341s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 40/120 reward=450.6 cp=2 eps=0.100 elapsed=3356s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 60/120 reward=464.7 cp=2 eps=0.100 elapsed=4680s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 80/120 reward=480.2 cp=2 eps=0.100 elapsed=6032s

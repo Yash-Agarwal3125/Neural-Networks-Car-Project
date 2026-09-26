@@ -14,3 +14,18 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Experiment artifacts (regenerable via scripts in experiments/; too
+# large/noisy for version control -- keep summary CSVs, drop weights,
+# per-episode logs, and LaTeX build output)
+experiments/**/*.weights.h5
+experiments/**/train_log.csv
+experiments/**/meta.json
+experiments/*.log
+experiments/latex_source/build*/
+experiments/latex_source/*.aux
+experiments/latex_source/*.bbl
+experiments/latex_source/*.blg
+experiments/latex_source/*.log
+experiments/latex_source/*.out
+experiments/latex_source/*.pdf

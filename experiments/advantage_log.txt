@@ -1,0 +1,49 @@
+2026-09-09 10:31:44.651138: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-09 10:32:04.677466: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-09 10:32:17.094826: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+done nominal seed 0
+done nominal seed 1
+done nominal seed 2
+done randomized seed 0
+done randomized seed 1
+done randomized seed 2
+     factor  level     regime  mean_advantage_std  mean_checkpoints
+ beam_count   1.00    nominal            2.126756          0.000000
+ beam_count   1.00 randomized            0.546346          0.000000
+ beam_count   3.00    nominal            0.738035          4.000000
+ beam_count   3.00 randomized            0.332126          0.666667
+ beam_count   5.00    nominal            0.872066          1.000000
+ beam_count   5.00 randomized            0.373816          0.333333
+ beam_count   7.00    nominal            1.066069          0.333333
+ beam_count   7.00 randomized            0.473282          0.333333
+    fov_deg  60.00    nominal            0.852810          4.333333
+    fov_deg  60.00 randomized            0.331220          0.666667
+    fov_deg  90.00    nominal            0.738035          4.000000
+    fov_deg  90.00 randomized            0.332126          0.666667
+    fov_deg 120.00    nominal            0.706589          3.666667
+    fov_deg 120.00 randomized            0.335378          0.666667
+    fov_deg 150.00    nominal            0.721685          2.666667
+    fov_deg 150.00 randomized            0.338052          0.666667
+noise_sigma   0.00    nominal            0.738035          4.000000
+noise_sigma   0.00 randomized            0.332126          0.666667
+noise_sigma   0.02    nominal            0.772895          3.583333
+noise_sigma   0.02 randomized            0.334550          0.666667
+noise_sigma   0.05    nominal            0.876256          3.541667
+noise_sigma   0.05 randomized            0.340557          0.666667
+noise_sigma   0.10    nominal            1.009197          3.375000
+noise_sigma   0.10 randomized            0.354495          0.666667
+  dropout_p   0.00    nominal            0.738035          4.000000
+  dropout_p   0.00 randomized            0.332126          0.666667
+  dropout_p   0.10    nominal            1.002539          3.291667
+  dropout_p   0.10 randomized            0.380206          0.666667
+  dropout_p   0.20    nominal            1.274179          2.083333
+  dropout_p   0.20 randomized            0.422548          0.666667
+  dropout_p   0.40    nominal            1.508439          0.041667
+  dropout_p   0.40 randomized            0.497681          0.041667

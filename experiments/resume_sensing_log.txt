@@ -1,0 +1,245 @@
+=== Sat, Sep  5, 2026 11:59:10 AM resume: sensing_train remaining runs ===
+=== Sat, Sep  5, 2026 11:59:10 AM starting sensing_train nominal seed 1 ===
+2026-09-05 11:59:28.897955: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 12:00:00.661023: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 12:00:24.933560: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\sensing_train\nominal_seed1] ep 20/120 reward=1.2 cp=0 eps=0.119 elapsed=205s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 40/120 reward=450.6 cp=2 eps=0.100 elapsed=677s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 60/120 reward=464.7 cp=2 eps=0.100 elapsed=1384s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 80/120 reward=480.2 cp=2 eps=0.100 elapsed=2202s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 100/120 reward=455.7 cp=2 eps=0.100 elapsed=2790s
+[experiments/full_runs\sensing_train\nominal_seed1] ep 120/120 reward=515.0 cp=3 eps=0.100 elapsed=3600s
+DONE experiments/full_runs\sensing_train\nominal_seed1 in 3601s
+=== Sat, Sep  5, 2026  1:00:34 PM starting sensing_train nominal seed 2 ===
+2026-09-05 13:00:38.598728: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 13:00:50.158846: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 13:01:00.816028: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\sensing_train\nominal_seed2] ep 20/120 reward=29.1 cp=0 eps=0.314 elapsed=110s
+[experiments/full_runs\sensing_train\nominal_seed2] ep 40/120 reward=-7.8 cp=0 eps=0.117 elapsed=206s
+[experiments/full_runs\sensing_train\nominal_seed2] ep 60/120 reward=15.5 cp=0 eps=0.100 elapsed=320s
+[experiments/full_runs\sensing_train\nominal_seed2] ep 80/120 reward=42.1 cp=0 eps=0.100 elapsed=446s
+[experiments/full_runs\sensing_train\nominal_seed2] ep 100/120 reward=195.8 cp=1 eps=0.100 elapsed=725s
+[experiments/full_runs\sensing_train\nominal_seed2] ep 120/120 reward=667.5 cp=6 eps=0.100 elapsed=1524s
+DONE experiments/full_runs\sensing_train\nominal_seed2 in 1524s
+=== Sat, Sep  5, 2026  1:26:31 PM starting sensing_train randomized seed 0 ===
+2026-09-05 13:26:33.909652: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 13:26:41.093906: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 13:26:47.329635: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\sensing_train\randomized_seed0] ep 20/120 reward=28.4 cp=0 eps=0.344 elapsed=102s
+[experiments/full_runs\sensing_train\randomized_seed0] ep 40/120 reward=34.3 cp=0 eps=0.139 elapsed=190s
+[experiments/full_runs\sensing_train\randomized_seed0] ep 60/120 reward=28.9 cp=0 eps=0.100 elapsed=285s
+[experiments/full_runs\sensing_train\randomized_seed0] ep 80/120 reward=437.7 cp=2 eps=0.100 elapsed=674s
+[experiments/full_runs\sensing_train\randomized_seed0] ep 100/120 reward=68.6 cp=0 eps=0.100 elapsed=1259s
+[experiments/full_runs\sensing_train\randomized_seed0] ep 120/120 reward=479.7 cp=2 eps=0.100 elapsed=2166s
+DONE experiments/full_runs\sensing_train\randomized_seed0 in 2167s
+=== Sat, Sep  5, 2026  2:03:02 PM starting sensing_train randomized seed 1 ===
+2026-09-05 14:03:29.264196: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:04:24.245472: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:05:11.609991: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\sensing_train\randomized_seed1] ep 20/120 reward=25.2 cp=0 eps=0.365 elapsed=224s
+[experiments/full_runs\sensing_train\randomized_seed1] ep 40/120 reward=21.2 cp=0 eps=0.200 elapsed=329s
+[experiments/full_runs\sensing_train\randomized_seed1] ep 60/120 reward=16.3 cp=0 eps=0.116 elapsed=429s
+[experiments/full_runs\sensing_train\randomized_seed1] ep 80/120 reward=19.8 cp=0 eps=0.100 elapsed=502s
+[experiments/full_runs\sensing_train\randomized_seed1] ep 100/120 reward=17.8 cp=0 eps=0.100 elapsed=566s
+[experiments/full_runs\sensing_train\randomized_seed1] ep 120/120 reward=20.5 cp=0 eps=0.100 elapsed=614s
+DONE experiments/full_runs\sensing_train\randomized_seed1 in 614s
+=== Sat, Sep  5, 2026  2:16:16 PM starting sensing_train randomized seed 2 ===
+2026-09-05 14:16:19.765509: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:16:28.643513: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:16:37.240213: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[experiments/full_runs\sensing_train\randomized_seed2] ep 20/120 reward=19.5 cp=0 eps=0.418 elapsed=76s
+[experiments/full_runs\sensing_train\randomized_seed2] ep 40/120 reward=19.8 cp=0 eps=0.223 elapsed=133s
+[experiments/full_runs\sensing_train\randomized_seed2] ep 60/120 reward=24.0 cp=0 eps=0.111 elapsed=192s
+[experiments/full_runs\sensing_train\randomized_seed2] ep 80/120 reward=92.8 cp=0 eps=0.100 elapsed=258s
+[experiments/full_runs\sensing_train\randomized_seed2] ep 100/120 reward=18.6 cp=0 eps=0.100 elapsed=332s
+[experiments/full_runs\sensing_train\randomized_seed2] ep 120/120 reward=17.3 cp=0 eps=0.100 elapsed=423s
+DONE experiments/full_runs\sensing_train\randomized_seed2 in 423s
+=== Sat, Sep  5, 2026  2:23:45 PM sensing_train remaining DONE, starting sensing_eval ===
+=== Sat, Sep  5, 2026  2:23:45 PM starting sensing_eval nominal seed 0 ===
+2026-09-05 14:23:48.209085: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:23:55.853624: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:24:02.474753: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 48.85976699416628, "std_reward": 7.354816055834102e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 560.9031324006374, "std_reward": 0.0, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 127.04505272072203, "std_reward": 4.412889633500461e-14, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": -2.278688905885658, "std_reward": 9.193520069792627e-16, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 544.7562185676986, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 549.2529357799206, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 543.7731333651266, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 559.430422735167, "std_reward": 8.159668999433407, "mean_checkpoints": 2.4, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 543.0374406651421, "std_reward": 3.987731185478329, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 447.67373551914824, "std_reward": 172.78138668046066, "mean_checkpoints": 1.7333333333333334, "checkpoint_clear_rate": 0.0, "crash_rate": 0.13333333333333333, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 529.372234638976, "std_reward": 8.366659600043208, "mean_checkpoints": 2.8666666666666667, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 376.32117648976083, "std_reward": 207.0436562527462, "mean_checkpoints": 2.1333333333333333, "checkpoint_clear_rate": 0.0, "crash_rate": 0.26666666666666666, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 20.18287039605894, "std_reward": 13.85925284511821, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sat, Sep  5, 2026  2:38:54 PM starting sensing_eval nominal seed 1 ===
+2026-09-05 14:38:57.509705: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:39:06.100152: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:39:14.246003: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 20.393792414869434, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 497.7459210322305, "std_reward": 5.883852844667281e-14, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 113.57059201343273, "std_reward": 2.941926422333641e-14, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 2.86077059977893, "std_reward": 9.193520069792627e-16, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 539.0006920015423, "std_reward": 2.3535411378669126e-13, "mean_checkpoints": 5.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 518.4961348104171, "std_reward": 0.0, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 517.1781679597652, "std_reward": 0.0, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 500.78648882463665, "std_reward": 7.1527809991216715, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 499.13934051610505, "std_reward": 7.198756876957166, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 485.8836136048347, "std_reward": 10.90758627753518, "mean_checkpoints": 2.933333333333333, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 492.2844163768535, "std_reward": 13.442147741943927, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 293.63581580661645, "std_reward": 192.24704797217134, "mean_checkpoints": 1.7333333333333334, "checkpoint_clear_rate": 0.0, "crash_rate": 0.6, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 34.20056828976102, "std_reward": 12.927959400529307, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sat, Sep  5, 2026  2:53:17 PM starting sensing_eval nominal seed 2 ===
+2026-09-05 14:53:18.760678: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:53:23.949408: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-05 14:53:30.057565: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+=== Sun, Sep  6, 2026  1:12:39 PM resume: sensing_train remaining runs ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP nominal seed 1 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP nominal seed 2 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP randomized seed 0 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP randomized seed 1 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP randomized seed 2 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM sensing_train remaining DONE, starting sensing_eval ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP eval nominal seed 0 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM SKIP eval nominal seed 1 (already done) ===
+=== Sun, Sep  6, 2026  1:12:39 PM starting sensing_eval nominal seed 2 ===
+2026-09-06 13:12:54.696842: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:13:24.732227: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:13:48.376363: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 20.838876101931824, "std_reward": 7.354816055834102e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 661.7903730034965, "std_reward": 0.0, "mean_checkpoints": 6.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 173.7787078903712, "std_reward": 5.883852844667281e-14, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 129.76085042951829, "std_reward": 0.0, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 562.0171313478024, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 5.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 705.1673502006465, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 6.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 473.53278059421075, "std_reward": 5.883852844667281e-14, "mean_checkpoints": 3.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 627.1493203902093, "std_reward": 80.60620206541606, "mean_checkpoints": 5.6, "checkpoint_clear_rate": 0.0, "crash_rate": 0.13333333333333333, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 610.5627827272382, "std_reward": 98.33231840774722, "mean_checkpoints": 5.4, "checkpoint_clear_rate": 0.0, "crash_rate": 0.2, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 632.5526311791979, "std_reward": 65.60379906115656, "mean_checkpoints": 5.666666666666667, "checkpoint_clear_rate": 0.0, "crash_rate": 0.2, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 537.1531084926471, "std_reward": 203.5456074709276, "mean_checkpoints": 4.333333333333333, "checkpoint_clear_rate": 0.0, "crash_rate": 0.2, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 398.066421886796, "std_reward": 185.30597050512347, "mean_checkpoints": 2.2666666666666666, "checkpoint_clear_rate": 0.0, "crash_rate": 0.3333333333333333, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 56.61745748281937, "std_reward": 39.8529411602483, "mean_checkpoints": 0.06666666666666667, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "nominal", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sun, Sep  6, 2026  1:34:48 PM starting sensing_eval randomized seed 0 ===
+2026-09-06 13:34:53.092202: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:35:01.839587: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:35:09.682494: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 15.155846122415403, "std_reward": 5.516112041875576e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 496.1390853972487, "std_reward": 1.7651558534001843e-13, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 119.86125170589273, "std_reward": 1.4709632111668204e-14, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 107.31702649484463, "std_reward": 1.4709632111668204e-14, "mean_checkpoints": 1.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 486.8770917726272, "std_reward": 1.7651558534001843e-13, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 491.85777417174984, "std_reward": 5.883852844667281e-14, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 482.7862814395783, "std_reward": 1.1767705689334563e-13, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 495.7130365506588, "std_reward": 1.563257369413554, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 488.6133707118715, "std_reward": 3.5236595943398434, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 474.0035473540747, "std_reward": 7.720180525621957, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 438.05325720844553, "std_reward": 32.79818239189805, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.4, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 373.8610453475139, "std_reward": 41.42891902833347, "mean_checkpoints": 2.0, "checkpoint_clear_rate": 0.0, "crash_rate": 0.8, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 62.15031988995481, "std_reward": 41.899986298561785, "mean_checkpoints": 0.13333333333333333, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 0, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sun, Sep  6, 2026  1:56:50 PM starting sensing_eval randomized seed 1 ===
+2026-09-06 13:56:54.625869: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:57:02.919212: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 13:57:10.011831: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 84.48805613646438, "std_reward": 1.4709632111668204e-14, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.061148446217402, "std_reward": 0.0, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 28.855304146096156, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 21.862209219474362, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.57381564414368, "std_reward": 0.0, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.17541472587019, "std_reward": 0.0, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.180703043494425, "std_reward": 7.354816055834102e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.123586319807792, "std_reward": 0.3039944569223934, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.07962195677031, "std_reward": 0.5133706140026421, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.017478719476294, "std_reward": 0.8363739380613866, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 16.653978771866786, "std_reward": 1.5060042205131468, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 16.51109178335076, "std_reward": 1.7875271080839394, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 18.631159946065715, "std_reward": 1.9629346646632002, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 1, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sun, Sep  6, 2026  2:00:05 PM starting sensing_eval randomized seed 2 ===
+2026-09-06 14:00:09.456526: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 14:00:18.251184: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-09-06 14:00:26.564403: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING:tensorflow:From C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\backend\tensorflow\core.py:232: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+C:\Users\Vidhi Jain\AppData\Local\Programs\Python\Python310\lib\site-packages\keras\src\saving\saving_lib.py:797: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables. 
+  saveable.load_own_variables(weights_store.get(inner_path))
+pygame 2.6.1 (SDL 2.28.4, Python 3.10.0)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+{"n_episodes": 15, "mean_reward": 34.58298907672348, "std_reward": 1.4709632111668204e-14, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 1, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.177679791883456, "std_reward": 7.354816055834102e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.950979791883206, "std_reward": 0.0, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 5, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.950979791883206, "std_reward": 0.0, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 7, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 18.426195397863243, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 60, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 16.763128409381036, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 120, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 16.96865714296106, "std_reward": 3.677408027917051e-15, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 150, "noise_sigma": 0.0, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.57871926601839, "std_reward": 0.7286757608976964, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.02, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 17.144759327999985, "std_reward": 0.599384512879468, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.05, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 16.708818020617883, "std_reward": 0.8867891947153839, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.1, "dropout_p": 0.0}
+{"n_episodes": 15, "mean_reward": 16.662051388674787, "std_reward": 0.9633991905091323, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.1}
+{"n_episodes": 15, "mean_reward": 15.41045862913701, "std_reward": 1.453620098364926, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.2}
+{"n_episodes": 15, "mean_reward": 16.91985645624338, "std_reward": 1.8956268755400887, "mean_checkpoints": 0.0, "checkpoint_clear_rate": 0.0, "crash_rate": 1.0, "lap_complete_rate": 0.0, "mean_lap_time": NaN, "regime": "randomized", "seed": 2, "beam_count": 3, "fov_deg": 90.0, "noise_sigma": 0.0, "dropout_p": 0.4}
+=== Sun, Sep  6, 2026  2:03:15 PM ALL REMAINING WORK DONE ===
